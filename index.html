@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="./assets/js/app.js" defer></script>
+    <title>Project Planner</title>
+  </head>
+  <body>
+    <header>
+      <h1>Project <span>P</span>lanner</h1>
+      <p>
+        "Manage your projects efficiently: from brainstorming to execution, this
+        planner accompanies you every step of the way."
+      </p>
+      <button id="addTask">Add task</button>
+    </header>
+    <main>
+      <nav>
+        <button id="display-all">All</button>
+        <button id="display-to-do">To do</button>
+        <button id="display-doing">Doing</button>
+        <button id="display-done">Done</button>
+        <button id="sort-by-due-date">Sort by due date</button>
+      </nav>
+      <div class="app-container">
+        <section id="toDo">
+          <h2>To do</h2>
+        </section>
+        <section id="doing"><h2>Doing</h2></section>
+        <section id="done"><h2>Done</h2></section>
+      </div>
+
+      <div class="hidden" id="taskForm">
+        <button id="closeButton">Close</button>
+      <form action="#"  class="form">
+        <h3>Add a new task</h3>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="taskName" />
+        <label for="description">Description:</label>
+        <textarea name="description" id="taskDescription" rows="4"></textarea>
+        <label for="status">Status:</label>
+        <select name="status" id="taskStatus">
+          <option value="null">Select a status</option>
+          <option value="toDo">To do</option>
+          <option value="doing">Doing</option>
+          <option value="done">Done</option>
+        </select>
+        <label for="dueDate">Due date:</label>
+        <input type="date" id="taskDueDate" value="today" />
+        <button type="submit" id="taskSubmit">Create task</button>
+      </form>
+    </div>
+    </main>
+    <footer>&copy; Justine Frigo - Keller 7</footer>
+  </body>
+</html>
